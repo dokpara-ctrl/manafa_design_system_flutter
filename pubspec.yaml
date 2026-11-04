@@ -1,0 +1,26 @@
+name: manafa_design_system
+description: Manafa's design system for Flutter, the mobile counterpart of the web Storybook.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.13.0
+  flutter: ">=3.47.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/icons/
+  fonts:
+    # Cairo is a variable font; text styles set the weight axis.
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Variable.ttf
