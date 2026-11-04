@@ -7,6 +7,9 @@ import '../manafa_package.dart';
 ///
 /// Names match Figma: `icon/general/info` is [ManafaIconData.generalInfo].
 enum ManafaIconData {
+  /// `icons/alerts/success-fill`
+  alertsSuccessFill('assets/icons/icon_alerts_success_fill.svg'),
+
   /// `icon/general/info`
   generalInfo('assets/icons/icon_general_info.svg'),
 

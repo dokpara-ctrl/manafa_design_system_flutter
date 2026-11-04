@@ -737,11 +737,7 @@ class _Amount extends StatelessWidget {
         if (showCurrency)
           ManafaIcon(ManafaIconData.generalRiyal, color: iconColor),
         Flexible(
-          child: Text(
-            text,
-            style: style,
-            overflow: TextOverflow.ellipsis,
-          ),
+          child: Text(text, style: style, overflow: TextOverflow.ellipsis),
         ),
       ],
     );

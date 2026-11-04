@@ -60,3 +60,4 @@ Rerun `build_runner` after adding or renaming a `@widgetbook.UseCase`.
 | Component | Figma | Confluence |
 | --- | --- | --- |
 | Slider | `Slider Group` | `DED / Slider` |
+| Password Strength | `Password Strength` | `DED / Password Strength` |

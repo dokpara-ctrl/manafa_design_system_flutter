@@ -11,6 +11,8 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 
+import 'package:manafa_widgetbook/components/password_strength.dart'
+    as _manafa_widgetbook_components_password_strength;
 import 'package:manafa_widgetbook/components/slider.dart'
     as _manafa_widgetbook_components_slider;
 import 'package:widgetbook/widgetbook.dart' as _widgetbook;
@@ -19,6 +21,64 @@ final directories = <_widgetbook.WidgetbookNode>[
   _widgetbook.WidgetbookFolder(
     name: 'components',
     children: [
+      _widgetbook.WidgetbookFolder(
+        name: 'password_strength',
+        children: [
+          _widgetbook.WidgetbookComponent(
+            name: 'ManafaPasswordStrength',
+            useCases: [
+              _widgetbook.WidgetbookUseCase(
+                name: 'Arabic',
+                builder:
+                    _manafa_widgetbook_components_password_strength.buildArabic,
+                designLink: 'https://www.figma.com/design/LPauPCDSWDcNHmluzNtRTl/Global-Design-system?node-id=9936-7236',
+              ),
+              _widgetbook.WidgetbookUseCase(
+                name: 'Full flow',
+                builder: _manafa_widgetbook_components_password_strength
+                    .buildFullFlow,
+                designLink: 'https://www.figma.com/design/LPauPCDSWDcNHmluzNtRTl/Global-Design-system?node-id=9936-7236',
+              ),
+              _widgetbook.WidgetbookUseCase(
+                name: 'Playground',
+                builder: _manafa_widgetbook_components_password_strength
+                    .buildPlayground,
+                designLink: 'https://www.figma.com/design/LPauPCDSWDcNHmluzNtRTl/Global-Design-system?node-id=9936-7236',
+              ),
+              _widgetbook.WidgetbookUseCase(
+                name: 'State: 0 of 5 (Start)',
+                builder:
+                    _manafa_widgetbook_components_password_strength.buildStart,
+                designLink: 'https://www.figma.com/design/LPauPCDSWDcNHmluzNtRTl/Global-Design-system?node-id=9936-7236',
+              ),
+              _widgetbook.WidgetbookUseCase(
+                name: 'State: 2 of 5',
+                builder:
+                    _manafa_widgetbook_components_password_strength.buildTwo,
+                designLink: 'https://www.figma.com/design/LPauPCDSWDcNHmluzNtRTl/Global-Design-system?node-id=9936-7236',
+              ),
+              _widgetbook.WidgetbookUseCase(
+                name: 'State: 3 of 5',
+                builder:
+                    _manafa_widgetbook_components_password_strength.buildThree,
+                designLink: 'https://www.figma.com/design/LPauPCDSWDcNHmluzNtRTl/Global-Design-system?node-id=9936-7236',
+              ),
+              _widgetbook.WidgetbookUseCase(
+                name: 'State: 4 of 5',
+                builder:
+                    _manafa_widgetbook_components_password_strength.buildFour,
+                designLink: 'https://www.figma.com/design/LPauPCDSWDcNHmluzNtRTl/Global-Design-system?node-id=9936-7236',
+              ),
+              _widgetbook.WidgetbookUseCase(
+                name: 'State: 5 of 5 (Complete)',
+                builder: _manafa_widgetbook_components_password_strength
+                    .buildComplete,
+                designLink: 'https://www.figma.com/design/LPauPCDSWDcNHmluzNtRTl/Global-Design-system?node-id=9936-7236',
+              ),
+            ],
+          ),
+        ],
+      ),
       _widgetbook.WidgetbookFolder(
         name: 'slider',
         children: [
