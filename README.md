@@ -3,6 +3,8 @@
 The Flutter counterpart of Manafa's web Storybook: design tokens and components
 for the mobile apps, with a [Widgetbook](https://www.widgetbook.io) to browse them.
 
+Live Widgetbook: https://app.widgetbook.io/a11b1601-5a24-4216-bbc4-988fc2f20233/850ff89d-58c8-4e0d-9c88-1f5713fd1b75 (updated on every push to `main` by GitHub Actions).
+
 Source of truth: the Figma Global Design System (`LPauPCDSWDcNHmluzNtRTl`) and
 the component pages in Confluence (`DED`). When they disagree, Figma wins.
 
@@ -28,7 +30,7 @@ test/                           widget tests
 dependencies:
   manafa_design_system:
     git:
-      url: <this repo>
+      url: https://github.com/dokpara-ctrl/manafa_design_system_flutter.git
 ```
 
 ```dart
