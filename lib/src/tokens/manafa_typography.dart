@@ -51,4 +51,16 @@ abstract final class ManafaTextStyles {
     letterSpacing: 0,
     leadingDistribution: TextLeadingDistribution.even,
   );
+
+  /// `body/captions`: Semi Bold 11, line height 1.44, letter spacing 0.
+  static const TextStyle bodyCaptions = TextStyle(
+    fontFamily: fontFamily,
+    package: fontPackage,
+    fontSize: 11,
+    fontWeight: FontWeight.w600,
+    fontVariations: [FontVariation('wght', 600)],
+    height: 1.44,
+    letterSpacing: 0,
+    leadingDistribution: TextLeadingDistribution.even,
+  );
 }

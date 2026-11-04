@@ -131,6 +131,17 @@ void main() {
     handle.dispose();
   });
 
+  testWidgets('rule text uses body/captions in text-subtext', (tester) async {
+    await tester.pumpWidget(_host(const ManafaPasswordStrength(password: '')));
+    final style = tester
+        .widget<Text>(find.text('At least 8 characters'))
+        .style!;
+    expect(style.fontSize, 11);
+    expect(style.height, 1.44);
+    expect(style.fontWeight, FontWeight.w600);
+    expect(style.color, ManafaColors.light.textSubtext);
+  });
+
   testWidgets('uses Arabic labels and mirrors in Arabic', (tester) async {
     final handle = tester.ensureSemantics();
     await tester.pumpWidget(

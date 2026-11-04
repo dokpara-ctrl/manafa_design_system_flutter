@@ -350,7 +350,7 @@ class _RuleRow extends StatelessWidget {
               Flexible(
                 child: Text(
                   label,
-                  style: ManafaTextStyles.bodySmall.copyWith(
+                  style: ManafaTextStyles.bodyCaptions.copyWith(
                     color: colors.textSubtext,
                   ),
                 ),
